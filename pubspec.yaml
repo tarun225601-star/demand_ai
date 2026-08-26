@@ -1,0 +1,25 @@
+name: demand_ai
+description: "A smart background predictive grocery tracker powered by Grok AI and local database."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  sqflite: ^2.3.2
+  path_provider: ^2.1.2
+  flutter_background_service: ^5.0.6
+  flutter_local_notifications: ^17.0.0
+  speech_to_text: ^6.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
