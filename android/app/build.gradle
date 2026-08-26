@@ -1,3 +1,9 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
 android {
     namespace "com.example.demand_ai"
     compileSdkVersion flutter.compileSdkVersion
@@ -13,8 +19,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.demand_ai"
-        // यहाँ minSdkVersion को 23 करना जरूरी है ताकि sqflite और speech_to_text मक्खन चलें
-        minSdkVersion 23 
+        minSdkVersion 23
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -25,4 +30,11 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
 }
